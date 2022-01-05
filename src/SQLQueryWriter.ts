@@ -7,7 +7,7 @@ export class SQLQuery implements SQLQueryWriter {
     parts = new Map;
     usable = false;
     setTables(tables: string) {
-        this.parts.set("tables", tables);
+        this.build.parts.set("tables", tables);
     };
     str() {
         if ( this.usable === false ) throw {
